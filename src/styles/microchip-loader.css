@@ -1,7 +1,7 @@
 /* Microchip Loader Styles */
 .preloader .microchip {
   font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
-  color: hsl(153, 90%, 90%);
+  color: hsl(200, 95%, 85%);
 }
 
 .microchip {
@@ -24,7 +24,7 @@
 
 .microchip__core,
 .microchip__dot {
-  fill: hsl(153, 90%, 30%);
+  fill: hsl(200, 100%, 40%);
   transition: fill 0.3s;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .microchip__line {
-  stroke: hsl(153, 90%, 30%);
+  stroke: hsl(200, 100%, 40%);
 }
 
 .microchip__line--1 {
@@ -136,7 +136,7 @@
 .microchip__spark,
 .microchip__wave {
   animation-timing-function: linear;
-  stroke: hsl(153, 90%, 70%);
+  stroke: hsl(200, 100%, 60%);
 }
 
 .microchip__spark--1 {
