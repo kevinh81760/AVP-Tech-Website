@@ -14,7 +14,13 @@ export function Navbar() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Use Lenis for smooth scroll if available, fallback to native
+      const lenis = (window as any).lenis;
+      if (lenis) {
+        lenis.scrollTo(element, { offset: 0, duration: 1.5 });
+      } else {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
